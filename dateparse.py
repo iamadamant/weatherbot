@@ -36,7 +36,7 @@ def check_format(format_):
 	return len(re.findall('%[dm]+.{1}%[dm]', format_.lower())) > 0
 
 def change_format(nformat_):
-	"""Меняет строку формата. Возвращяет True в случае успеха
+	"""Меняет формат представления даты. 
 
 	Keyword arguments:
 	nformat_ -- Строка формата
