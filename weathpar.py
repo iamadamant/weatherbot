@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-class EmptyDataError(Exception):
+class EmptyDateError(Exception):
 	"""Исключение возникающее если дата не установленна
 	
 	"""
@@ -21,7 +21,7 @@ def is_parsed(f):
 	"""
 	def inner():
 		if soup is None:
-			raise EmptyDataError(EmptyDataError.msg)
+			raise EmptyDateError(EmptyDateError.msg)
 		else:
 			return f()
 	return inner
